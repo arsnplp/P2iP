@@ -5,55 +5,117 @@
   <title>Projet P2IP</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f4f8;
       margin: 0;
       padding: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #666;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 25px 20px;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      justify-content: space-between;
+      text-align: center;
     }
 
-    h1 {
-      color: #2c3e50;
-      margin-bottom: 40px;
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
     }
 
-    .button-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
+    .card p {
+      font-size: 15px;
+      color: #555;
+      flex-grow: 1;
     }
 
-    .btn {
-      padding: 20px 30px;
-      font-size: 16px;
+    .card a {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
       background-color: #3498db;
       color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      width: 200px;
-      text-align: center;
       text-decoration: none;
-      display: inline-block;
+      border-radius: 8px;
+      transition: background-color 0.3s;
     }
 
-    .btn:hover {
-      background-color: #2980b9;
+    .card a:hover {
+      background-color: #217dbb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #888;
+      border-top: 1px solid #eee;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <h1>Projet P2IP</h1>
-  <div class="button-container">
-    <a class="btn" href="cv.html">Générateur de CV</a>
-    <a class="btn" href="softskills.html">Formation Soft Skills</a>
-    <a class="btn" href="entretien.html">Outils pour Entretien</a>
-    <a class="btn" href="messagerie.html">Messagerie</a>
-  </div>
+
+  <header>
+    <h1>Projet P2IP</h1>
+    <p>Préparez-vous pour votre avenir professionnel grâce à nos outils</p>
+  </header>
+
+  <main class="card-grid">
+    <div class="card">
+      <h2>Générateur de CV</h2>
+      <p>Remplissez un formulaire pour créer rapidement un CV professionnel à télécharger.</p>
+      <a href="cv.html">Accéder</a>
+    </div>
+    <div class="card">
+      <h2>Formation Soft Skills</h2>
+      <p>Améliorez vos compétences humaines : communication, gestion du stress, esprit d’équipe.</p>
+      <a href="softskills.html">Accéder</a>
+    </div>
+    <div class="card">
+      <h2>Outils pour Entretien</h2>
+      <p>Entraînez-vous avec des questions types et des conseils pour réussir vos entretiens.</p>
+      <a href="entretien.html">Accéder</a>
+    </div>
+    <div class="card">
+      <h2>Messagerie</h2>
+      <p>Laissez un message ou posez une question à notre équipe pédagogique.</p>
+      <a href="messagerie.html">Accéder</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 — Projet P2IP. Réalisé dans un cadre pédagogique.
+  </footer>
+
 </body>
 </html>
