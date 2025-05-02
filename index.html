@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Projet P2IP</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 40px;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 20px 30px;
+      font-size: 16px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 200px;
+    }
+
+    .btn:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Projet P2IP</h1>
+  <div class="button-container">
+    <button class="btn" onclick="window.location.href='#'">Générateur de CV</button>
+    <button class="btn" onclick="window.location.href='#'">Formation Soft Skills</button>
+    <button class="btn" onclick="window.location.href='#'">Outils pour Entretien</button>
+    <button class="btn" onclick="window.location.href='#'">Messagerie</button>
+  </div>
+</body>
+</html>
